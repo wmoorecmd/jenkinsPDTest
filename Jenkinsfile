@@ -8,7 +8,6 @@ pipeline{
 
       steps{
         script{
-            svn.getAnsible()
             ok = createPagerDutyMaintenanceWindow(
                 token: '$PAGERDUTY_API_KEY',
                 env: 'dev',
